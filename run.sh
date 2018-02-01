@@ -1,0 +1,1 @@
+ docker run -it --rm -p 42151:42151 workspace-server
