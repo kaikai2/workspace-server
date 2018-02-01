@@ -1,7 +1,9 @@
 FROM ubuntu:16.04
 
 RUN apt-get -y update \
-    && apt-get -y install wget rpm2cpio cpio\
+    && apt-get -y install wget rpm2cpio cpio \
+           libgl1-mesa-glx libglib2.0-0 libxcomposite1 libxcursor1 \
+           libxi6 libxtst6 libxss1 libfontconfig1 libxrandr2 libasound2 libegl1-mesa\
     && apt-get clean
 
 RUN mkdir ~/workspace && cd ~/workspace \
